@@ -1,0 +1,60 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header (similar al portal) -->
+    <header class="bg-blue-600 text-white p-4" role="banner">
+        <nav class="container mx-auto flex justify-between items-center" role="navigation" aria-label="Menú principal">
+            <div class="text-lg font-bold">Contacto</div>
+            <ul class="flex space-x-4">
+                <li><a href="portal.html" class="hover:underline" aria-label="Portal Web">Portal Web</a></li>
+                <li><a href="sitio.html" class="hover:underline" aria-label="Sitio Web">Sitio Web</a></li>
+                <li><a href="sistema.html" class="hover:underline" aria-label="Sistema Web">Sistema Web</a></li>
+                <li><a href="catalogo.html" class="hover:underline" aria-label="Catálogo">Catálogo</a></li>
+                <li><a href="contact.html" class="hover:underline" aria-label="Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulario de contacto -->
+    <section class="bg-white py-16" role="main">
+        <div class="container mx-auto max-w-lg p-6 shadow-lg rounded-lg" aria-labelledby="contact-form-title">
+            <h2 id="contact-form-title" class="text-3xl font-bold mb-6 text-center">Contáctanos</h2>
+            <form class="space-y-4" aria-label="Formulario de contacto">
+                <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+                <input id="nombre" type="text" placeholder="Nombre" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required aria-required="true">
+
+                <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                <input id="email" type="email" placeholder="Correo electrónico" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required aria-required="true">
+
+                <label for="asunto" class="block text-sm font-medium text-gray-700">Asunto</label>
+                <input id="asunto" type="text" placeholder="Asunto" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+
+                <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                <textarea id="mensaje" placeholder="Mensaje" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" rows="5" aria-required="true"></textarea>
+
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-600" aria-label="Enviar mensaje">Enviar</button>
+            </form>
+            <div class="text-center mt-8" aria-labelledby="contact-info">
+                <p id="contact-info">O también puedes escribirnos a: <span class="text-blue-600">contacto@miempresa.com</span></p>
+                <p>Teléfono: <span class="text-blue-600">+52 123 456 7890</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (similar al portal) -->
+    <footer class="bg-blue-600 text-white py-4" role="contentinfo">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Contacto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

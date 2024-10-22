@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    
+    <!-- Header (similar al portal) -->
+    <header class="bg-blue-600 text-white p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-bold">Sistema Web</div>
+            <ul class="flex space-x-4">
+                <li><a href="portal.html" class="hover:underline">Portal Web</a></li>
+                <li><a href="sitio.html" class="hover:underline">Sitio Web</a></li>
+                <li><a href="sistema.html" class="hover:underline">Sistema Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h2 class="text-xl mb-6">Registro</h2>
+        <form action="/register" method="POST">
+            <div class="mb-4">
+                <label class="block mb-2" for="email">Correo Electronico</label>
+                <input type="text" id="email" name="email" required class="border rounded w-full p-2">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2" for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required class="border rounded w-full p-2">
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Registrar</button>
+        </form>
+        <p class="mt-4 text-center">¿Ya tienes una cuenta? <a href="login.html" class="text-blue-500">Inicia sesión</a></p>
+    </div>
+</body>
+</html>

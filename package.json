@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto de Experiencia de Usuario",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:css": "npx tailwindcss -i ./src/styles.css -o ./public/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  }
+}

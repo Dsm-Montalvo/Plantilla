@@ -1,0 +1,51 @@
+<!-- sistema.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header (similar al portal) -->
+    <header class="bg-blue-600 text-white p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-bold">Sistema Web</div>
+            <ul class="flex space-x-4">
+                <li><a href="portal.html" class="hover:underline">Portal Web</a></li>
+                <li><a href="sitio.html" class="hover:underline">Sitio Web</a></li>
+                <li><a href="sistema.html" class="hover:underline">Sistema Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulario de inicio de sesión -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto max-w-md p-6 shadow-lg rounded-lg">
+            <h2 class="text-3xl font-bold mb-6 text-center">Iniciar sesión</h2>
+            <form action="/login" method="POST" class="space-y-4">
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Usuario</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Iniciar sesión</button>
+                <p class="text-center mt-4">¿No tienes cuenta? <a href="register.html" class="text-blue-600 hover:underline">Regístrate</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (similar al portal) -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Sistema Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
